@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Playwrite IS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&family=Playwrite+IS:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Oull Cake's</title>
+  </head>
+
+  <body>
+    <!-- header section start -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="#">OULL<span>cake's</span></a>
+        </div>
+        <nav class="navbar" id="nav-menu">
+          <a href="#home">Home</a>
+          <a href="#products">Produk</a>
+          <a href="#about">Tentang Kami</a>
+          <a href="#contact">Kontak Kami</a>
+        </nav>
+        <button class="hamburger" id="hamburger" name="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- Contact floating -->
+    <a href="formContact.php" target="_blank">
+      <div class="btn-floating">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          fill="none"
+          id="whatsapp"
+        >
+          <path
+            fill="#25D366"
+            d="M24 48c13.255 0 24-10.745 24-24S37.255 0 24 0 0 10.745 0 24s10.745 24 24 24Z"
+          ></path>
+          <path
+            fill="#FDFDFD"
+            fill-rule="evenodd"
+            d="M24.791 37.353h-.006c-2.388-.001-4.735-.6-6.82-1.738L10.4 37.6l2.025-7.395a14.246 14.246 0 0 1-1.905-7.135c.003-7.868 6.405-14.27 14.27-14.27 3.819.002 7.402 1.488 10.096 4.185a14.185 14.185 0 0 1 4.176 10.097c-.003 7.866-6.402 14.267-14.27 14.27Zm-6.475-4.321.433.257a11.844 11.844 0 0 0 6.037 1.653h.005c6.538 0 11.859-5.32 11.862-11.861a11.79 11.79 0 0 0-3.471-8.392 11.78 11.78 0 0 0-8.386-3.479c-6.543 0-11.864 5.321-11.867 11.861 0 2.241.626 4.424 1.814 6.313l.282.448-1.199 4.378 4.49-1.178Zm13.176-6.878c.25.12.417.201.489.321.089.149.089.863-.208 1.696s-1.722 1.593-2.407 1.695c-.614.092-1.392.13-2.246-.14a20.465 20.465 0 0 1-2.033-.752c-3.343-1.444-5.602-4.684-6.029-5.296-.03-.043-.05-.073-.063-.088l-.002-.004c-.189-.252-1.453-1.94-1.453-3.685 0-1.643.806-2.504 1.178-2.9l.07-.075a1.31 1.31 0 0 1 .95-.446c.238 0 .476.002.684.012.026.002.052.002.08.001.207 0 .467-.002.722.612.099.236.242.586.394.956.307.747.646 1.572.706 1.691.089.179.148.387.03.625l-.05.102c-.09.182-.156.316-.307.493-.06.07-.121.144-.183.22-.123.149-.245.298-.352.405-.179.177-.364.37-.157.727.209.357.924 1.525 1.984 2.47 1.14 1.017 2.13 1.447 2.632 1.664.098.043.178.077.236.106.356.179.564.15.772-.089.208-.238.892-1.041 1.13-1.398.237-.357.475-.297.802-.179.327.12 2.08.982 2.436 1.16l.195.096Z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </div>
+    </a>
+
+    <!-- Hero Section start-->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="content">
+          <h1>Wellcome to <span>OULL cake's</span></h1>
+          <p>#Oder Today, Deliver Today.</p>
+          <a href="#" class="cta">SHOP ALL</a>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section end-->
+
+    <!-- Product Section Start -->
+    <section id="products" class="products">
+      <div class="container">
+        <div class="row">
+          <div class="product-card">
+            <a href="detail-produk.php?id=1">
+              <img
+                src="assets/img/menu/Banana_Cake_(Low_Res).jpg"
+                alt="nastar keju"
+              />
+              <p class="product-title">Banana Cake</p>
+              <p class="product-desk">
+                Kue klasik yang dibuat dengan menggunakan pisang...
+              </p>
+              <p class="product-price">IDR 99.000</p>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="detail-produk.php?id=2">
+              <img
+                src="assets/img/menu/Carrot_Cake_(Low_Res).jpg"
+                alt="nastar keju"
+              />
+              <p class="product-title">Carrot Cake</p>
+              <p class="product-desk">
+                Kue klasik yang menggunakan wortel sebagai salah...
+              </p>
+              <p class="product-price">IDR 120.000</p>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="detail-produk.php?id=3">
+              <img
+                src="assets/img/menu/Lemon_Cake_(Low_Res).jpg"
+                alt="nastar keju"
+              />
+              <p class="product-title">Lemon Cake</p>
+              <p class="product-desk">
+                Kue yang memiliki ciri khas buah lemon...
+              </p>
+              <p class="product-price">IDR 120.000</p>
+            </a>
+          </div>
+          <div class="product-card">
+            <a href="detail-produk.php?id=4">
+              <img
+                src="assets/img/menu/Avocado_Tiramisu_Reg.jpg"
+                alt="nastar keju"
+              />
+              <p class="product-title">Avocado Tiramisu</p>
+              <p class="product-desk">
+                Kue favorit khas Italia dengan lembutnya mascarpone...
+              </p>
+              <p class="product-price">IDR 200.000</p>
+            </a>
+          </div>
+        </div>
+        <a href="produk.php" class="cta">SEE MORE</a>
+      </div>
+    </section>
+    <!-- Product Section end -->
+
+    <!-- About section start -->
+    <div id="about" class="about">
+      <div class="container">
+        <h2>Tentang Kami</h2>
+        <div class="row">
+          <div class="about-img">
+            <img src="assets/img/hero.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Kenapa harus OULL cake's?</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet
+              architecto aspernatur qui labore dolorem temporibus.
+            </p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
+              officia perferendis facere neque quidem odio quis tempora ut,
+              autem, iste placeat vitae veritatis soluta quia!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About section end -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Kontak <span>Kami</span></h2>
+        <div class="row">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5077094595717!2d106.78563887364403!3d-6.583631064355409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c44c0bb80afb%3A0x55afabfb3ec1fda5!2sUniversitas%20Bina%20Sarana%20Informatika%20Kampus%20Bogor%20B%20(UBSI%20Bogor%20B)!5e0!3m2!1sid!2sid!4v1719401180378!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="map"
+          ></iframe>
+          <div class="social-contact">
+            <div class="phone">
+              <!-- Phone -->
+              <a href="">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.3545 22.2323C15.3344 21.7262 11.1989 20.2993 7.44976 16.5502C3.70065 12.8011 2.2738 8.66559 1.76767 6.6455C1.47681 5.48459 2.00058 4.36434 2.88869 3.72997L5.21694 2.06693C6.57922 1.09388 8.47432 1.42407 9.42724 2.80051L10.893 4.91776C11.5152 5.8165 11.3006 7.0483 10.4111 7.68365L9.24234 8.51849C9.41923 9.1951 9.96939 10.5846 11.6924 12.3076C13.4154 14.0306 14.8049 14.5807 15.4815 14.7576L16.3163 13.5888C16.9517 12.6994 18.1835 12.4847 19.0822 13.1069L21.1995 14.5727C22.5759 15.5257 22.9061 17.4207 21.933 18.783L20.27 21.1113C19.6356 21.9994 18.5154 22.5232 17.3545 22.2323ZM8.86397 15.136C12.2734 18.5454 16.0358 19.8401 17.8405 20.2923C18.1043 20.3583 18.4232 20.2558 18.6425 19.9488L20.3056 17.6205C20.6299 17.1665 20.5199 16.5348 20.061 16.2171L17.9438 14.7513L17.0479 16.0056C16.6818 16.5182 16.0047 16.9202 15.2163 16.7501C14.2323 16.5378 12.4133 15.8569 10.2782 13.7218C8.1431 11.5867 7.46219 9.7677 7.24987 8.7837C7.07977 7.9953 7.48181 7.31821 7.99439 6.95208L9.24864 6.05618L7.78285 3.93893C7.46521 3.48011 6.83351 3.37005 6.37942 3.6944L4.05117 5.35744C3.74413 5.57675 3.64162 5.89565 3.70771 6.15943C4.15989 7.96418 5.45459 11.7266 8.86397 15.136Z"
+                    fill="#0F0F0F"
+                  />
+                </svg>
+              </a>
+              <div class="info">
+                <span class="satu">Call to us</span>
+                <p class="dua">Everyday, 08:00 - 20:00 wib</p>
+                <a href="">
+                  <p class="tiga">+62 890-1234-5678</p>
+                </a>
+              </div>
+            </div>
+            <div class="whatsapp">
+              <!-- Whatsapp -->
+              <a href="">
+                <svg
+                  fill="#000000"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 32 32"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>whatsapp</title>
+                  <path
+                    d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z"
+                  ></path>
+                </svg>
+              </a>
+              <div class="info">
+                <span class="satu">Whatsapp</span>
+                <p class="dua">Everyday, 08:00 - 20:00 wib</p>
+                <a href="">
+                  <p class="tiga">0856-7890-1234</p>
+                </a>
+              </div>
+            </div>
+            <div class="email">
+              <!-- email -->
+              <a href="">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <rect
+                    x="3"
+                    y="5"
+                    width="18"
+                    height="14"
+                    rx="2"
+                    stroke="#000000"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+              <div class="info">
+                <span class="satu">Email us</span>
+                <p class="dua">Everyday, 08:00 - 20:00 wib</p>
+                <a href="">
+                  <p class="tiga">example123@gmail.com</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="logo">
+          <a href="#">OULL<span>cake's</span></a>
+        </div>
+        <div class="socials">
+          <!-- {{-- instagram --}} -->
+          <a
+            href="https://instagram.com/Awaludn16"
+            target="blank"
+            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary-500 hover:bg-primary-500 hover:text-white transition duration-300"
+          >
+            <svg
+              width="20"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current"
+            >
+              <title>Instagram</title>
+              <path
+                d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+              />
+            </svg>
+          </a>
+          <!-- {{-- tiktok --}} -->
+          <a
+            href="https://instagram.com/Awaludn16"
+            target="blank"
+            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary-500 hover:bg-primary-500 hover:text-white transition duration-300"
+          >
+            <svg
+              width="20"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current"
+            >
+              <title>TikTok</title>
+              <path
+                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+              />
+            </svg>
+          </a>
+          <!-- {{-- x --}} -->
+          <a
+            href="https://instagram.com/Awaludn16"
+            target="blank"
+            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary-500 hover:bg-primary-500 hover:text-white transition duration-300"
+          >
+            <svg
+              width="20"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current"
+            >
+              <title>X</title>
+              <path
+                d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+              />
+            </svg>
+          </a>
+          <!-- {{-- facebook --}} -->
+          <a
+            href="https://instagram.com/Awaludn16"
+            target="blank"
+            class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary-500 hover:bg-primary-500 hover:text-white transition duration-300"
+          >
+            <svg
+              width="20"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current"
+            >
+              <title>Facebook</title>
+              <path
+                d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="links">
+          <a href="#home">home</a>
+          <a href="#products">products</a>
+          <a href="#about">tentang kami</a>
+          <a href="#contact">kontak kami</a>
+        </div>
+        <div class="credit">
+          <p>Copyright &copy; 2024 OULLcake's.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

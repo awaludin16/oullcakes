@@ -1,0 +1,645 @@
+/* color default */
+:root {
+  --primary: #763011;
+  --secondary: #64748b;
+  --dark: #1e293b;
+  --text-white: #fffaeb;
+  --button-color: #e88a0e;
+  --button-hover: #f7b128;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+/* main css */
+body {
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+/* header section */
+header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 7%;
+}
+
+header .container .logo a {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: var(--dark);
+  font-style: italic;
+}
+
+header .container .logo a span {
+  font-family: "Playwrite IS", cursive;
+  font-size: 1.4rem;
+  color: var(--primary);
+}
+
+header .container .navbar a {
+  display: inline-block;
+  padding: 0 1.5rem;
+  color: var(--dark);
+}
+
+header .container .navbar a:hover,
+header .container .navbar a:active {
+  color: var(--primary);
+}
+
+header .container .navbar a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.3rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s ease-in-out;
+}
+
+header .container .navbar a:hover::after {
+  transform: scaleX(0.5);
+}
+
+header .container #hamburger {
+  display: none;
+  background-color: transparent;
+}
+
+header .container #hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: var(--dark);
+  transition-duration: 0.3s;
+}
+
+.hamburger-active > span:nth-child(1) {
+  transform-origin: bottom right;
+  transform: rotate(-41deg);
+}
+
+.hamburger-active > span:nth-child(2) {
+  transform: scale(0);
+}
+
+.hamburger-active > span:nth-child(3) {
+  transform-origin: bottom right;
+  transform: rotate(38deg);
+}
+
+/* hero style */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../assets/img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 28%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 8%,
+    rgba(0, 0, 0, 0) 56%
+  );
+}
+
+.hero .container {
+  width: 100%;
+}
+
+.hero .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .container .content h1 {
+  font-size: 3.7rem;
+  color: var(--text-white);
+  line-height: 1.2;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero .container .content p {
+  font-family: "Playwrite IS", cursive;
+  margin-top: 1rem;
+  color: var(--text-white);
+  font-size: 1.7rem;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero .container .content .cta {
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.5rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--dark);
+  background-color: var(--button-color);
+  border-radius: 0.5rem;
+}
+
+.hero .container .content .cta:hover {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: var(--button-hover);
+}
+
+/* About style */
+.about .container,
+.products .container {
+  width: 100%;
+  padding: 7rem 7% 1.4rem;
+}
+
+.about .container h2,
+.contact .container h2 {
+  font-family: "Playwrite IS", cursive;
+  text-align: center;
+  font-size: 1.72rem;
+  color: var(--primary);
+  margin-bottom: 2.75rem;
+}
+
+.about .container .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .container .row .about-img {
+  width: 47%;
+}
+
+.about .container .row .about-img img {
+  max-width: 100%;
+  border-radius: 0.75rem;
+}
+
+.about .container .row .content {
+  width: 48%;
+}
+
+.about .container .row .content h3 {
+  font-size: 1.42rem;
+  margin-bottom: 1rem;
+  color: var(--dark);
+}
+
+.about .container .row .content p {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  font-weight: 300;
+  line-height: 1.56em;
+  color: var(--dark);
+}
+
+/* product style */
+.products .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.products .container .row .product-card {
+  margin: 0 0.96rem;
+  width: 14rem;
+}
+
+.products .container .row .product-card img {
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.products .container .row .product-card .product-title {
+  font-size: 1.2rem;
+  margin: 0.64rem 0 0.2rem;
+  color: var(--dark);
+}
+
+.products .container .row .product-card .product-desk {
+  color: var(--secondary);
+  font-size: small;
+}
+
+.products .container .row .product-card .product-price {
+  margin-top: 0.56rem;
+  color: var(--primary);
+}
+
+.products .container .cta {
+  display: block;
+  width: 12.64rem;
+  text-align: center;
+  margin: 2rem auto;
+  font-size: 1.24rem;
+  padding: 0.64rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--dark);
+  background-color: var(--button-color);
+  border-radius: 10px;
+}
+
+.products .container .cta:hover {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: var(--button-hover);
+}
+
+/* Contact Style */
+.contact .container {
+  padding: 7rem 0;
+  width: 100%;
+}
+
+.contact .container .row {
+  background-color: #fffaeb;
+  display: flex;
+  margin-top: 2rem;
+  padding: 1.24rem;
+}
+
+.contact .container .row .map {
+  flex: 1 1 44rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.contact .container .row .social-contact {
+  flex: 1 1 44rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .container .row .social-contact .phone,
+.contact .container .row .social-contact .whatsapp,
+.contact .container .row .social-contact .email {
+  padding: 0 2.4rem 1rem;
+}
+
+.contact .container .row .social-contact .info {
+  display: inline-block;
+  padding-left: 0.5rem;
+}
+
+.contact .container .row .social-contact .info .satu {
+  font-size: 1.32rem;
+  color: var(--dark);
+}
+
+.contact .container .row .social-contact .info .dua {
+  color: var(--secondary);
+  margin: 0.32rem 0;
+}
+
+.contact .container .row .social-contact .info .tiga {
+  font-size: 1.16rem;
+  color: var(--dark);
+}
+
+.contact .container .row .social-contact .info .tiga:hover {
+  text-decoration: underline;
+}
+
+/* Footer Style */
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: var(--primary);
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+footer .container .logo a {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: var(--text-white);
+  font-style: italic;
+}
+
+footer .container .logo a span {
+  font-family: "Playwrite IS", cursive;
+  font-size: 1.72rem;
+}
+
+footer .container .socials {
+  margin: 2rem auto 1rem;
+}
+
+footer .container .socials a {
+  margin-right: 0.75rem;
+  color: var(--text-white);
+  transition: 300ms;
+}
+
+footer .container .socials a:hover {
+  color: var(--button-hover);
+}
+
+footer .container .socials a svg {
+  fill: currentColor;
+}
+
+footer .container .links a {
+  margin: 0 0.75rem;
+  color: var(--text-white);
+}
+
+footer .container .links a:hover {
+  color: var(--button-hover);
+}
+
+footer .container .credit {
+  margin-top: 2rem;
+}
+
+footer .container .credit p {
+  color: var(--text-white);
+}
+
+/* produk style (produk.php) */
+.produk {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 4.4rem 7% 0;
+}
+
+.produk .produk-card {
+  margin: 2.4rem 0.96rem 0;
+  width: 14rem;
+}
+
+.produk .produk-card .produk-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.produk .produk-card .info-produk {
+  padding: 0.32rem;
+}
+
+.produk .produk-card .info-produk .nama-produk {
+  font-size: 1.2rem;
+  line-height: 1.56;
+  color: var(--dark);
+}
+
+.produk .produk-card .info-produk .deskripsi {
+  font-size: small;
+  color: var(--secondary);
+  margin-bottom: 0.56rem;
+}
+
+.produk .produk-card .info-produk .harga {
+  color: var(--primary);
+}
+
+/* Detail Produk */
+.detail-produk {
+  display: flex;
+  width: 100%;
+  padding: 5.6rem 7% 0;
+}
+
+.detail-produk .detail-img {
+  flex: 1 1 28rem;
+}
+
+.detail-produk .detail-img img {
+  width: 100%;
+}
+
+.detail-produk table,
+.detail-produk table tr,
+.detail-produk table tr td,
+.detail-produk table tr th {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.detail-produk table tr td,
+table tr th {
+  padding: 1rem;
+}
+
+.detail-produk table tr td:nth-child(1) {
+  font-weight: 600;
+}
+.detail-produk table tr td:nth-child(2) {
+  color: var(--secondary);
+  line-height: 1.5;
+}
+.detail-produk table {
+  /* text-align: center; */
+  flex: 1 1 44rem;
+}
+
+/* Prduk lalinnya */
+.produk-lainnya {
+  width: 100%;
+  padding: 4.4rem 7% 0;
+}
+
+.produk-lainnya .produk {
+  padding: 0;
+}
+
+/* contact floating */
+.btn-floating {
+  position: fixed;
+  right: 3.2rem;
+  bottom: 3.2rem;
+}
+
+.btn-floating svg {
+  width: 50px;
+  height: 50px;
+}
+
+/* form contct */
+.form-contact {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-contact h1 {
+  text-align: center;
+  color: #333;
+}
+.form-contact form {
+  display: flex;
+  flex-direction: column;
+}
+.form-contact label {
+  margin-top: 10px;
+  color: #555;
+}
+.form-contact input,
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.form-contact button {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #25d366;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form-contact button:hover {
+  background-color: #1ebd58;
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 92%;
+  }
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  .container {
+    max-width: 768px;
+  }
+  header .container #hamburger {
+    display: inline-block;
+    position: relative;
+  }
+  header .navbar {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: inset -2px 2px 5px -3px rgba(0, 0, 0, 0.5);
+    top: 100%;
+    right: -100%;
+    height: 100vh;
+    width: 15rem;
+    transition: 0.3s;
+  }
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    transition: 0.3s;
+  }
+  header .navbar a::after {
+    transform-origin: 0 0;
+  }
+  header .navbar.active {
+    right: 0;
+  }
+  .products .container .row .product-card svg {
+    transform: scale(0.81);
+  }
+  .contact .container .row .social-contact svg {
+    transform: scale(0.81);
+  }
+  footer .container .socials a svg {
+    transform: scale(0.81);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 65%;
+  }
+  .container {
+    max-width: 360px;
+  }
+  .hero .container .content h1 span {
+    display: block;
+  }
+  .about .container .row {
+    display: block;
+  }
+  .about .container .row .about-img {
+    width: 100%;
+  }
+  .about .container .row .about-img img {
+    margin-bottom: 1.5rem;
+  }
+  .about .container .row .content {
+    width: 100%;
+  }
+  .products .container .row .product-card {
+    width: 21.64rem;
+  }
+  .products p {
+    font-size: 1.15rem;
+  }
+  .contact .container .row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact .container .row .social-contact {
+    margin-top: 1rem;
+  }
+  .contact .container .row .social-contact .phone,
+  .contact .container .row .social-contact .whatsapp,
+  .contact .container .row .social-contact .email {
+    padding: 0 0 1rem;
+  }
+}
