@@ -1,5 +1,6 @@
 <?php
 
+// pemangilan file
 require_once 'data.php';
 require_once 'function.php';
 
@@ -113,10 +114,10 @@ require_once 'function.php';
         </a>
       </div>
       <div class="links">
-        <a href="#home">home</a>
-        <a href="#products">products</a>
-        <a href="#about">tentang kami</a>
-        <a href="#contact">kontak kami</a>
+        <a href="index.html">home</a>
+        <a href="index.html#products">products</a>
+        <a href="index.html#about">tentang kami</a>
+        <a href="index.html#contact">kontak kami</a>
       </div>
       <div class="credit">
         <p>Copyright &copy; 2024 OULLcake's.</p>

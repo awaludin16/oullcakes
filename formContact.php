@@ -1,8 +1,8 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = $_POST['name'];
-  $phone = $_POST['phone'];
-  $message = $_POST['message'];
+if (isset($_GET['submit'])) {
+  $name = $_GET['name'];
+  $phone = $_GET['phone'];
+  $message = $_GET['message'];
   $whatsappNumber = '6285694630235';
 
   $whatsappURL = "https://wa.me/$whatsappNumber?text=Name:%20$name%0APhone:%20$phone%0AMessage:%20$message";
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
   <div class="form-contact">
     <h1>Contact Us</h1>
-    <form action="" method="post">
+    <form action="" method="get">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
 
@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <label for="message">Message</label>
       <textarea id="message" name="message" rows="4" required></textarea>
 
-      <button type="submit">Send to WhatsApp</button>
+      <button type="submit" name="submit">Send to WhatsApp</button>
     </form>
   </div>
 </body>

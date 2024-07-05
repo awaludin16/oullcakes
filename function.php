@@ -1,5 +1,6 @@
 <?php
 
+// function untuk menampilkan limit dari deskripsi produk
 function limit($separator, $kata)
 {
   $limit = explode(' ', $separator, $kata + 1);

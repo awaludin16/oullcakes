@@ -1,5 +1,6 @@
 <?php
 
+// Array Associative
 $products = [
   [
     'id' => '1',
